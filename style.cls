@@ -14,7 +14,7 @@
 \graphicspath{ {images/} }
 
 \newcommand{\link}[2]{
-  \textcolor{blue}{\underline{\href{#1}{#2}}}}
+  \textcolor{blue}{\underline{\href{#1}{#2 - #1}}}}
 
 \newcommand{\linkurl}[1]{
     \textcolor{blue}{\underline{\href{#1}{#1}}}}

@@ -46,14 +46,14 @@ It can still be found in the hexacopter project bag.
 \subsection{Sizes}
 The propellers should be size [xyz].  The top three propellers all spin clockwise, and should be labelled SFP.  The bottom three propellers spin counter-clockwise and should be labelled SP.
 \subsection{Attaching to Motors}
-When placing the propellers onto the motors, the propellers should be placed first, divot side up.
+When placing the propellers onto the motors, the propellers should be placed first, divot side up. (on top, the divot faces away from the motor, on bottom the divot faces towards)
 It is then followed by the washer and then the nut.
 To prevent the nuts from flying off during flight, Loctite or any similar adhesive should be applied to secure them to the screws.
 \section{Telemetry}
 The hexacopter can be connected to a computer to probe for debug info or to arm/disarm the craft. \\ \\
 \includegraphics[scale=0.5]{mission_planner.jpg} \\
 (example screenshot of APM Planner)
-\subsection{Download}
+\subsubsection{Download}
 \link{http://firmware.us.ardupilot.org/Tools/APMPlanner/}{APM Planner} - (MacOS, Linux, Windows) \\
 \link{http://ardupilot.org/planner/docs/common-install-mission-planner.html}{Mission Planner} - (Windows only)
 \subsection{Direct Connection}
@@ -67,6 +67,9 @@ Depending on your operating system of choice, the flight controller will show up
   OS/X & \texttt{tty.usbSerialXXX} \\
   Linux & \texttt{ttyUSBx}
 \end{tabular}
+\newline
+\newline
+Connect to one of these using baud rate \texttt{115200}.
 \subsection{Radio}
 I couldn't get this working yet :/
 \pagebreak
