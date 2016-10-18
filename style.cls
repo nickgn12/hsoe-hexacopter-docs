@@ -8,6 +8,16 @@
 \usepackage{xfrac}
 \usepackage{quoting}
 \usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{color}
+
+\graphicspath{ {images/} }
+
+\newcommand{\link}[2]{
+  \textcolor{blue}{\underline{\href{#1}{#2}}}}
+
+\newcommand{\linkurl}[1]{
+    \textcolor{blue}{\underline{\href{#1}{#1}}}}
 
 \newenvironment{blockquote}{
   \begin{mdframed}[linewidth=3pt,topline=false,rightline=false,bottomline=false]
