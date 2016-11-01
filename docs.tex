@@ -44,11 +44,11 @@ It can still be found in the hexacopter project bag.
 To arm or disarm the hexacopter using the controller, push the left stick to the bottom right and the right stick to the bottom left.  The control sticks should be facing inwards towards each other.  Hold this position for a few seconds and the craft will arm or disarm.
 \section{Propellers}
 \subsection{Sizes}
-The propellers should be size [xyz].  The top three propellers all spin clockwise, and should be labelled SFP.  The bottom three propellers spin counter-clockwise and should be labelled SP.
+The propellers should be size $10\times4.7$.  The top three propellers all spin clockwise, and should be labelled SFP (Slow Flyer Pusher).  The bottom three propellers spin counter-clockwise and should be labelled SP (Slow Flyer).
 \subsection{Attaching to Motors}
-When placing the propellers onto the motors, the propellers should be placed first, divot side up. (on top, the divot faces away from the motor, on bottom the divot faces towards)
-It is then followed by the washer and then the nut.
-To prevent the nuts from flying off during flight, Loctite or any similar adhesive should be applied to secure them to the screws.
+When placing the propellers onto the motors, the propellers should be placed first, divot side up (on top, the divot faces away from the motor, on bottom the divot faces towards).
+It is then followed by the washer, flat side towards the motor, and then the nut.
+To prevent the nuts from flying off during flight, it is recommended that Loctite or any similar adhesive to be applied to secure them to the screws.
 \section{Telemetry}
 The hexacopter can be connected to a computer to probe for debug info or to arm/disarm the craft. \\ \\
 \includegraphics[scale=0.5]{mission_planner.jpg} \\
@@ -71,14 +71,13 @@ Depending on your operating system of choice, the flight controller will show up
 \newline
 Connect to one of these using baud rate \texttt{115200}.
 \subsection{Radio}
-I couldn't get this working yet :/
+Connect one of the \textit{3DR 915 MHz} radios to your computer via a Micro-USB to USB adapter.
+Connect the other radio to the hexacopter via the \textit{Telem} port.  Using the planner application, connect to the craft as previously shown using baud rate \texttt{57600}.
 \pagebreak
 \section{Todo}
 \begin{itemize}
 \item 1.1.2 Charging connections example setup
 \item 1.1.3 Charging steps
-\item 2 Figure out how to arm w/ controller
-\item 4.3 Figure out how to get the radio telemetry working
 \item Get lots of pictures
 \end{itemize}
 \end{document}
